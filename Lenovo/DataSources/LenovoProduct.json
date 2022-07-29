@@ -1,0 +1,151 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crc75_lenovoproducts",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crc75_lenovoproduct",
+    "MaxGetRowsCount": 500,
+    "Name": "LenovoProduct",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "负责人",
+      "{Attachments}": "Attachments",
+      "crc75_lenovomodel": "品类",
+      "crc75_lenovopic": "图片",
+      "crc75_lenovopicid": "crc75_lenovoPicId",
+      "crc75_lenovoproduct_Annotations": "Notes",
+      "crc75_lenovoproduct_AsyncOperations": "System Jobs",
+      "crc75_lenovoproduct_BulkDeleteFailures": "Bulk Delete Failures",
+      "crc75_lenovoproduct_DuplicateBaseRecord": "Duplicate Records (crc75_lenovoproduct_DuplicateBaseRecord)",
+      "crc75_lenovoproduct_DuplicateMatchingRecord": "Duplicate Records (crc75_lenovoproduct_DuplicateMatchingRecord)",
+      "crc75_lenovoproduct_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crc75_lenovoproduct_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crc75_lenovoproduct_ProcessSession": "Process Sessions",
+      "crc75_lenovoproduct_SyncErrors": "Sync Errors",
+      "crc75_lenovoproductid": "LenovoProduct",
+      "crc75_model": "型号",
+      "crc75_name": "名称",
+      "crc75_series": "系列",
+      "createdby": "创建者",
+      "createdon": "创建时间",
+      "createdonbehalfby": "创建者(代理)",
+      "importsequencenumber": "导入序列号",
+      "modifiedby": "修改者",
+      "modifiedon": "修改时间",
+      "modifiedonbehalfby": "修改者(代理)",
+      "overriddencreatedon": "创建记录的时间",
+      "owningbusinessunit": "负责的业务部门",
+      "owningteam": "负责团队",
+      "owninguser": "负责人用户",
+      "statecode": "状态",
+      "statuscode": "状态描述",
+      "timezoneruleversionnumber": "时区规则版本号",
+      "utcconversiontimezonecode": "UTC 转换时区代码",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "LenovoProduct",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "LenovoProduct (视图)",
+    "Name": "_crc75_lenovoproduct_views",
+    "RelatedEntityName": "LenovoProduct",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "40ccb250-52e5-4466-82b8-7df6193d6170": "LenovoProduct关联视图",
+      "67856f85-b5c5-4c11-8305-5564e0cd3b34": "LenovoProduct高级查找视图",
+      "747212c7-4bb9-4b71-94eb-aed2da50846a": "停用LenovoProduct",
+      "8bd36e2b-c4f6-453b-914f-3729f61d4030": "可用的LenovoProduct",
+      "c60eb6e3-a8a8-4719-857b-a1d709962488": "LenovoProduct查找视图"
+    }
+  },
+  {
+    "DisplayName": "状态 (LenovoProduct)",
+    "Name": "crc75_lenovoproduct_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "可用",
+      "1": "停用"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "LenovoProduct"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "LenovoProduct",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "状态描述 (LenovoProduct)",
+    "Name": "crc75_lenovoproduct_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "可用",
+      "2": "停用"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "LenovoProduct"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "LenovoProduct",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "型号Lenovo",
+    "Name": "crc75_lenovoproductmodel",
+    "OptionSetInfoNameMapping": {
+      "912010000": "ThinkPad",
+      "912010001": "游戏本",
+      "912010002": "台式机主机",
+      "912010003": "一体机",
+      "912010004": "轻薄本"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crc75_lenovomodel",
+        "OptionSetReferenceEntityName": "LenovoProduct"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crc75_lenovomodel",
+    "RelatedEntityName": "LenovoProduct",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "系列",
+    "Name": "crc75_series",
+    "OptionSetInfoNameMapping": {
+      "912010000": "P",
+      "912010001": "T",
+      "912010002": "X1",
+      "912010003": "拯救者",
+      "912010004": "YOGA",
+      "912010005": "小新"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crc75_series",
+        "OptionSetReferenceEntityName": "LenovoProduct"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crc75_series",
+    "RelatedEntityName": "LenovoProduct",
+    "Type": "OptionSetInfo"
+  }
+]
