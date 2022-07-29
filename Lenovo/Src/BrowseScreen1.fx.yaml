@@ -164,7 +164,7 @@
         FontWeight: =FontWeight.Bold
         Height: =70
         Size: =21
-        Text: ="产品表"
+        Text: ="产品目录查看"
         Width: =376
         ZIndex: =9
 
